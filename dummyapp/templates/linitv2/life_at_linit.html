@@ -1,0 +1,326 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" type="images/png" href="{% static 'images/logo.png' %}">
+    <title>Linit</title> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+   
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'indexpage' %}"><img src="{% static 'images/White.png' %}" alt="linit_logo" style="width:50px;margin-left:25px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'indexpage' %}">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pumppage">Pump Components</a></li>
+                  <li><a class="dropdown-item" href="valvepage">Valve Components</a></li>
+                  <li><a class="dropdown-item" href="CNCpage">CNC Turned Components</a></li>
+                  <li><a class="dropdown-item" href="pipepage">Pipe Fittings</a></li>
+                  <li><a class="dropdown-item" href="stainlesssteelpage">Stainless Steal Fasteners</a></li>
+                  <li><a class="dropdown-item" href="rubberpage">Rubber Moulded Parts</a></li>
+                  <li><a class="dropdown-item" href="gallerypage">Product Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productionpage">Production</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qualitypage">Quality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rotterdampage">Rotterdam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfomancepage">Perfomance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="life_at_linitpage">Life at Linit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careerspage">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactpage">Contact Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section id="life">
+  <div class="container text-white contact_head">
+    <h1 data-aos="fade-down" data-aos-duration="2000">Life At LINIT</h1> 
+  </div>
+</section>
+
+
+<section id="life2">
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="row">
+      <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+        <a href="{% static 'images/life1.jpg' %}" data-fancybox="gallery" ><img src="{% static 'images/life1.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life2.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life2.jpg' %}" class='life_img' alt="" >
+      </div></a>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life3.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life3.jpg' %}" class='life_img' alt="" >
+      </div></a>
+      <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1500" >
+        <a href="{% static 'images/life4.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life4.jpg' %}" class='life_img' alt="" >
+      </div></a>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+        <a href="{% static 'images/life5.jpg' %}" data-fancybox="gallery" ><img src="{% static 'images/life5.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life6.jpg' %}" data-fancybox="gallery" ><img src="{% static 'images/life6.jpg' %}" class='life_img' alt=""  ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life7.jpg' %}" data-fancybox="gallery" ><img src="{% static 'images/life7.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1500">
+        <a href="{% static 'images/life8.jpg' %}" data-fancybox="gallery" ><img src="{% static 'images/life8.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+        <a href="{% static 'images/life9.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life9.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life10.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life10.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life11.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life11.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1500">
+        <a href="{% static 'images/life12.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life12.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+    </div>
+  
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+        <a href="{% static 'images/life13.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life13.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life14.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life14.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life15.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life15.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1500">
+        <a href="{% static 'images/life16.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life16.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+        <a href="{% static 'images/life17.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life17.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life18.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life18.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life19.jfif' %}" data-fancybox="gallery"><img src="{% static 'images/life19.jfif' %}" class='life_img' alt=""></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1500">
+        <a href="{% static 'images/life20.jfif' %}" data-fancybox="gallery"><img src="{% static 'images/life20.jfif' %}" class='life_img' alt="" ></a>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+        <a href="{% static 'images/life21.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life21.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life22.jfif' %}" data-fancybox="gallery"><img src="{% static 'images/life22.jfif' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life23.jfif' %}" data-fancybox="gallery"><img src="{% static 'images/life23.jfif' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1500">
+        <a href="{% static 'images/life24.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life24.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
+        <a href="{% static 'images/life25.jfif' %}" data-fancybox="gallery"><img src="{% static 'images/life25.jfif' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+        <a href="{% static 'images/life26.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life26.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+      <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
+       <a href="{% static 'images/life27.jpeg' %}" data-fancybox="gallery"><img src="{% static 'images/life27.jpeg' %}" class='life_img' alt="" ></a> 
+      </div>
+      <div class="col-sm-3" data-aos="fade-left" data-aos-duration="1500">
+        <a href="{% static 'images/life28.jpg' %}" data-fancybox="gallery"><img src="{% static 'images/life28.jpg' %}" class='life_img' alt="" ></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        
+       <!-- Footer -->
+       <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-2 topfooter">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 footerrow">
+              <!-- Grid column -->
+              <div class="col-sm-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white" >AboutUs</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Quality</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center footer_txt">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-2">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          All the © Copyrights are reserved by LINIT EXPORTS PVT. LTD.
+          <a class="text-white" href="https://mdbootstrap.com/"
+             ></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  
+  
+</body>
+</html>

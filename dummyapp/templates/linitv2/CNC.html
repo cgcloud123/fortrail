@@ -1,0 +1,465 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" type="images/png" href="{% static 'images/logo.png' %}">
+    <title>Linit</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/custom.js' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="contact.html"> -->
+   
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'indexpage' %}"><img src="{% static 'images/White.png' %}" alt="linit_logo" style="width:50px;margin-left:25px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'indexpage' %}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pumppage">Pump Components</a></li>
+                  <li><a class="dropdown-item" href="valvepage">Valve Components</a></li>
+                  <li><a class="dropdown-item" href="CNCpage">CNC Turned Components</a></li>
+                  <li><a class="dropdown-item" href="pipepage">Pipe Fittings</a></li>
+                  <li><a class="dropdown-item" href="stainlesssteelpage">Stainless Steal Fasteners</a></li>
+                  <li><a class="dropdown-item" href="rubberpage">Rubber Moulded Parts</a></li>
+                  <li><a class="dropdown-item" href="gallerypage">Product Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productionpage">Production</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qualitypage">Quality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rotterdampage">Rotterdam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfomancepage">Perfomance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="life_at_linitpage">Life at Linit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careerspage">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactpage">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section id="pupmcomponent">
+    <div class="container text-white contact_head">
+        <h1 data-aos="fade-down" data-aos-duration="2000">CNC Turned Components</h1> 
+      </div>
+</section><br>
+<section id="pump2">
+    <div class="container">
+        <h2>CNC Turned Components</h2>
+        <p>Concept to Component" being key to our business, Linit has invested heavily in sophisticated CNC Machines, Special Tooling and Precision Instruments to perform intricate machining with Close Tolerance (upto 20 Microns).
+        Linit has state-of-the-art In-House machining facility with 44 CNC machines and ultra modern inspection & testing facility.
+        </p>
+    </div>
+</section>
+
+<section id="production1">
+    <div class="container CNC">
+      <h2>Inhouse</h2><br>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="table-responsive-sm cnc_div">
+            <table class="table table-striped">
+              <thead>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <th scope="col" colspan="2">CNC/VMC Machines</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    CNC Turning Centers (Doosan and HAAS)
+                  </td>
+                  <td>44</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    VMC Vertical Machining Centers (HAAS)
+                  </td>
+                  <td>15</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Vertical Turret Lathe (CNC) (Doosan)
+                  </td>
+                  <td>1</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Polygon Turning Machines
+                  </td>
+                  <td>6</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Automatic Hard Face Welding Machine
+                  </td>
+                  <td>1</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    High Speed Bandsaw Machines
+                  </td>
+                  <td>9</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Vibro Polishing Machine
+                  </td>
+                  <td>1</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Glass Bead Blasting Machine
+                  </td>
+                  <td>1</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Dynamic Balancing Machine
+                  </td>
+                  <td>1</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Ultrasonic Washing/Cleaning Machine
+                  </td>
+                  <td>1</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    CMM
+                  </td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+    <div class="container CNC">
+      <h2>Outsourced</h2><br>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="table-responsive-sm">
+            <table class="table table-striped">
+              <thead>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <th scope="col" colspan="2">CNC/VMC Machines</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    CNC Turning Centers 
+                  </td>
+                  <td>30 Nos.</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Single Spindle Automat
+                  </td>
+                  <td>100 Nos.</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    VMCs
+                  </td>
+                  <td>10 Nos.</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    HMCs
+                  </td>
+                  <td>3 Nos.</td>
+                </tr>
+                <tr data-aos="slide-right" data-aos-duration="1500">
+                  <td>
+                    Drilling & Tapping
+                  </td>
+                  <td>50 Nos.</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+</section><BR></BR>
+
+<section id="pump3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+              <h3>CNC Turned Parts:</h3>
+              <p class="paraall">About 300,000 pcs per month.</p>
+              <h3>Automat Turned Parts:</h3>
+              <p class="paraall">Thress Millinon pcs per month.</p>
+              <h3>Bar Stock:</h3>
+              <ul>
+                <li>Round upto Dia 150mm</li>
+                <li>Hexagonal upto 120mm A/F</li>
+              </ul>
+              <h3>Quality Assurance:</h3>
+              <p class="paraall">Dedicated experienced engineers to monitor the manufacturing processes.</p>
+              <h3>Material Grades:</h3>
+              <p class="paraall">Stainless Steel Grades: 1.4301, 1.4305, 1.4401, 1.4404, 1.4571, 1.4021, 1.4057, Duplex, Carbon Steel, Brass & Aluminium.</p>
+              <h3>Raw Material Certification:</h3>
+              <p class="paraall">PED 97/23/EC and AD2000 or equivalent certifications from the source,wherever applicable</p>
+              <h3>Capacity:</h3>
+              <p class="paraall">Linit always work with at least 30% spare capacity to meet growing demand of Pump & Valve Industry and produce high volume components at a very short delivery.
+              </p>
+              <h3>Forgings:</h3>
+              <ul class="paraall">
+                <li>Open Die: Upto 600 kgs</li>
+                <li>Closed Die: Upto 120 kgs</li>
+                <li>Ring Rolling: Upto 150 kgs & Dia 1000 mm</li>
+              </ul>
+            </div>
+            <div class="col-sm-7 pupm3img1">
+              <a href="{% static 'CNC/CNC (1).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (1).jpg'  %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (2).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (2).jpg' %}" alt="" class="pump_img "></a>
+              <a href="{% static 'CNC/CNC (3).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (3).jpg' %}" alt="" class="pump_img' "></a>
+              <a href="{% static 'CNC/CNC (4).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (4).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (5).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (5).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (6).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (6).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (7).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (7).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (8).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (8).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (9).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (9).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (10).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (10).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (11).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (11).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (12).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (12).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (13).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (13).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (14).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (14).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (15).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (15).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (16).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (16).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (17).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (17).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (18).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (18).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (19).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (19).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (20).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (20).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (21).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (21).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (22).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (22).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (23).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (23).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (24).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (24).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (25).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (25).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (26).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (26).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (27).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (27).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (28).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (28).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (29).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (29).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (30).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (30).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (31).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (31).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (32).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (32).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (33).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (33).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (34).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (34).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (35).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (35).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (36).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (36).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (37).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (37).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (38).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (38).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (39).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (39).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (40).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (40).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (41).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (41).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (42).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (42).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (43).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (43).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (44).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (44).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (45).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (45).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (46).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (46).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'CNC/CNC (47).jpg' %}" data-fancybox="gallery"><img src="{% static 'CNC/CNC (47).jpg' %}" alt="" class="pump_img"></a>
+            </div>
+            
+        </div><br><br>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="pumppage" class="pump_anchor"><div class="pump_button">Pump Components</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="valvepage" class="pump_anchor"><div class="pump_button">Valve Components</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="CNCpage" class="pump_anchor"><div class="pump_button">CNC Turned Components</div></a>
+          </div>
+          
+        </div><br><br>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="pipepage" class="pump_anchor"><div class="pump_button">Pipe Fittings</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="stainlesssteelpage" class="pump_anchor"><div class="pump_button">Stainless Steel Fasteners</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="rubberpage" class="pump_anchor"><div class="pump_button">Ruber Moulded Parts</div></a>
+          </div>
+          
+        </div>
+    </div><br><br>
+</section>
+    
+    
+
+       
+       <!-- Footer -->
+       <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-2 topfooter">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 footerrow">
+              <!-- Grid column -->
+              <div class="col-sm-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white" >AboutUs</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Quality</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center footer_txt">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-2">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          All the © Copyrights are reserved by LINIT EXPORTS PVT. LTD.
+          <a class="text-white" href="https://mdbootstrap.com/"
+             ></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+  
+  <script src="{% static 'js/custom.js' %}"></script>
+  
+  
+</body>
+</html>

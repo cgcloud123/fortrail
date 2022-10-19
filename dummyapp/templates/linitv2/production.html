@@ -1,0 +1,714 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" type="images/png" href="{% static 'images/logo.png' %}">
+    <title>Linit</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/custom.js' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="contactpage"> -->
+   
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="indexpage"><img src="{% static 'images/White.png' %}" alt="linit_logo" style="width:50px;margin-left:25px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'indexpage' %}">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pumppage">Pump Components</a></li>
+                  <li><a class="dropdown-item" href="valvepage">Valve Components</a></li>
+                  <li><a class="dropdown-item" href="CNCpage">CNC Turned Components</a></li>
+                  <li><a class="dropdown-item" href="pipepage">Pipe Fittings</a></li>
+                  <li><a class="dropdown-item" href="stainlesssteelpage">Stainless Steal Fasteners</a></li>
+                  <li><a class="dropdown-item" href="rubberpage">Rubber Moulded Parts</a></li>
+                  <li><a class="dropdown-item" href="gallerypage">Product Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Production</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qualitypage">Quality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rotterdampage">Rotterdam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfomancepage">Perfomance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="life_at_linitpage">Life at Linit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careerspage">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactpage">Contact Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="production">
+      <div class="container text-white contact_head">
+        <h1 data-aos="fade-down" data-aos-duration="1000">Production</h1> 
+      </div>
+    </section>    
+    <section id="production1">
+      <div class="container prod_start">
+        <h2>Manufacturing strength-CNC</h2><br>
+        <div class="table-responsive-sm">
+          <table class="table table-striped">
+            <thead>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <th scope="col">Machine</th>
+                <th scope="col">Make</th>
+                <th scope="col">Model</th>
+                <th scope="col">Capacity</th>
+                <th scope="col">M/C at Vasai</th>
+                <th scope="col">M/C at Rajkot</th>
+                <th scope="col">Total Machines</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>CNC Lathe</th>
+                <td>Doosan</td>
+                <td>Lynx 200</td>
+                <td>8<sup>''</sup>(200 mm)</td>
+                <td>29</td>
+                <td>26</td>
+                <td>55</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                  <td>CNC Lathe</th>
+                  <td>Doosan</td>
+                  <td>2100B</td>
+                  <td>8<sup>''</sup>(200 mm)</td>
+                  <td>6</td>
+                  <td></td>
+                  <td>6</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                  <td>CNC Lathe</th>
+                  <td>Haas</td>
+                  <td>SL10/ST10</td>
+                  <td>6<sup>''</sup>(150 mm)</td>
+                  <td></td>
+                  <td>2</td>
+                  <td>2</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>CNC Lathe</th>
+                <td>Doosan</td>
+                <td>Puma 280</td>
+                <td>12<sup>''</sup>(300 mm)</td>
+                <td>2</td>
+                <td></td>
+                <td>2</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>CNC Lathe</th>
+                <td>Doosan</td>
+                <td>GT2600</td>
+                <td>12<sup>''</sup>(300 mm)</td>
+                <td>2</td>
+                <td></td>
+                <td>2</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>CNC Lathe</th>
+                <td>ACE</td>
+                <td>Jobber</td>
+                <td>8<sup>''</sup>(200 mm)</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+              </tr>
+
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>CNC Lathe</th>
+                <td>Doosan</td>
+                <td>Puma 400</td>
+                <td>16<sup>''</sup>(400 mm)</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>Tsugami Lathe</th>
+                <td>Japan</td>
+                <td>M08J</td>
+                <td>8<sup>''</sup>(200 mm)</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+              </tr>
+
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>Polygon Turning</th>
+                <td>Trishul</td>
+                <td>Polygon</td>
+                <td>8<sup>''</sup>(200 mm)</td>
+                <td></td>
+                <td></td>
+                <td>6</td>
+              </tr>
+
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>Sliding Head CNC</th>
+                <td>TSUGAMIN</td>
+                <td>B0205-III</td>
+                <td>20 mm Dia</td>
+                <td>2</td>
+                <td></td>
+                <td>2</td>
+              </tr>
+
+              <tr class="ms_total" data-aos= "flip-up" data-aos-offset="300" data-aos-duration="1500">
+                <td colspan="4" class="text-white">Total CNC Turning</td>
+                <td class="text-white">50</td>
+                <td class="text-white">29</td>
+                <td class="text-white">79</td>
+
+              </tr>
+                
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+
+    <section id="production1">
+      <div class="container prod_start">
+        <h2>Manufacturing strength-VMC</h2><br>
+        <div class="table-responsive-sm">
+          <table class="table table-striped">
+            <thead>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <th scope="col">Machine</th>
+                <th scope="col">Make</th>
+                <th scope="col">Model</th>
+                <th scope="col">Table XYZ</th>
+                <th scope="col">M/C at Vasai</th>
+                <th scope="col">M/C at Rajkot</th>
+                <th scope="col">Total Machines</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>VMC</th>
+                <td>HAAS</td>
+                <td>SMM</td>
+                <td>406X305X254</td>
+                <td>2</td>
+                <td></td>
+                <td>2</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                  <td>VMC</th>
+                  <td>HAAS</td>
+                  <td>VF1</td>
+                  <td>508X406X508</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>4</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                  <td>VMC</th>
+                  <td>HAAS</td>
+                  <td>VF2</td>
+                  <td>762X406X508</td>
+                  <td>13</td>
+                  <td>7</td>
+                  <td>20</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                  <td>VMC</th>
+                  <td>HAAS</td>
+                  <td>VF2(5 AXIS)</td>
+                  <td>762X406X508</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>2</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                  <td>VMC</th>
+                  <td>HAAS</td>
+                  <td>VF3-YT</td>
+                  <td>1016X660X635</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>2</td>
+              </tr>
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                  <td>VMC</th>
+                  <td>HAAS</td>
+                  <td>VF4-i</td>
+                  <td>1270X508X635</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>1</td>
+              </tr>
+
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>VMC</th>
+                <td>Doosan</td>
+                <td>DNM 4500</td>
+                <td>520X400X480</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+              </tr>
+
+              <tr data-aos="slide-up" data-aos-anchor-placement="bottom-center">
+                <td>VMC</th>
+                <td>Doosan</td>
+                <td>DNM 4500</td>
+                <td>800X450X510</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+              </tr>
+
+              <tr class="ms_total" data-aos= "flip-up" data-aos-offset="300" data-aos-duration="1500">
+                <td colspan="4" class="text-white">Total VMC Machines</td>
+                <td class="text-white">23</td>
+                <td class="text-white">10</td>
+                <td class="text-white">33</td>
+              </tr>
+
+              <tr class="final_total" data-aos="slide-left" data-aos-offset="300" data-aos-duration="1500">
+                <td colspan="4" class="text-white">Total CNC/VMC/Sliding Head/Polygon Machines</td>
+                <td class="text-white">73</td>
+                <td class="text-white">39</td>
+                <td class="text-white">112</td>
+              </tr>
+            </tbody>
+            
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4th Section -->
+
+    <section id="production1">
+      <div class="container prod_start">
+        <h2>Other Machines and Equipments</h2><br>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="table-responsive-sm">
+              <table class="table table-striped">
+                <thead>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <th scope="col">Other Machines</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Single Spindle Automats (Inhouse)</td>
+                    <td>146</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Tornos Sliding Head</td>
+                    <td>13</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Centre Lathes</td>
+                    <td>5</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Thread Rolling Machines</td>
+                    <td>2</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Centreless Grinding Machines</td>
+                    <td>3</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Milling Machines</td>
+                    <td>6</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Drilling Machines</td>
+                    <td>25</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Horizontal Tapping(Thada)</td>
+                    <td>2</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Bar Feeders for CNC - Dia 60mm</td>
+                    <td>6</td>
+                  </tr>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <td>Single Spindle Automats (Outsourced)</td>
+                    <td>400</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-sm-5">
+            <div class="table-responsive-sm">
+              <table class="table table-striped">
+                <thead>
+                  <tr data-aos="slide-right" data-aos-duration="1500">
+                    <th scope="col">Other Supporting Equipments</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-aos="slide-left" data-aos-duration="1500">
+                    <td>Robotic Seat Welding Machines (Hard Facing)</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-aos="slide-left" data-aos-duration="1500">
+                    <td>Dynamic Balancing Machine</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-aos="slide-left" data-aos-duration="1500">
+                    <td>Pressure Testing Machine</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-aos="slide-left" data-aos-duration="1500">
+                    <td>Vibro Polishing Machine</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-aos="slide-left" data-aos-duration="1500">
+                    <td>Glass Bead Blasting Machine</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-aos="slide-left" data-aos-duration="1500">
+                    <td>Ultrasonic Washing Cleaning Machine</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-aos="slide-left" data-aos-duration="1500">
+                    <td>Laser Marking Machine</td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        <!-- columns ends here   -->
+        </div>
+      </div>
+    </section>
+    <section id="production1">
+      <div class="container prod_start">
+        <h2>Manufacturing Capacity</h2><br>
+        <div class="table-responsive-sm">
+          <table class="table table-striped">
+            <thead>
+              <tr data-aos="zoom-in-up">
+                <th scope="col">Product Group</th>
+                <th scope="col">Installed Capacity</th>
+                <th scope="col">Spare Capacity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-aos="zoom-in-up">
+                <td>Precision Turned Fastener</th>
+                <td>7 Million Pcs/Month</td>
+                <td>3 Million Pcs/Month</td>
+              </tr>
+              <tr data-aos="zoom-in-up">
+                <td>CNC-VMC Machined Components</th>
+                <td>1 Million Pcs/Month</td>
+                <td>3 Lakh Pcs/Month</td>
+              </tr>
+              <tr data-aos="zoom-in-up">
+                <td>Investment Castings</th>
+                <td>25 MT/Month</td>
+                <td>10 MT/Month</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery1">
+      <div class="container prod_start">
+
+        <h2>Vasai CNC/VMC Machine Shop</h2><br>
+        <div class="row">
+          <div class="col-sm-5 productmachinediv">
+            <a href="{% static 'images/productmachine1.png' %}" data-fancybox="gallery" data-caption="VASAI-MACHINE SHOP"><img src="{% static 'images/productmachine1.png' %}" alt="" class="productmachine col-sm-3" data-aos="fade-right" data-aos-duration="1500"></a>
+            <a href="{% static 'images/productmachine2.png' %}" data-fancybox="gallery" data-caption="VASAI-MACHINE SHOP"><img src="{% static 'images/productmachine2.png' %}" alt="" class="productmachine col-sm-3" data-aos="fade-left" data-aos-duration="1500"></a>
+          
+          </div>
+          <div class="col-sm-7 machine1" >
+            <h3>Machine 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab cumque, magni aliquam fugiat, a et nobis dolore aliquid ad ut, perferendis blanditiis nihil! Quos saepe incidunt repudiandae veritatis autem, dolorem illum velit iure cumque eligendi libero aperiam tenetur ut harum asperiores doloribus nobis, debitis accusantium ab quidem ratione? Tenetur, doloremque! Lorem ipsum dolor sit </p>
+          </div>
+          
+        </div><br>
+        <div class="row">
+            
+            <div class="col-sm-7 machine1">
+                <H3>Machine 2</H3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab cumque, magni aliquam fugiat, a et nobis dolore aliquid ad ut, perferendis blanditiis nihil! Quos saepe incidunt repudiandae veritatis autem, dolorem illum velit iure cumque eligendi libero aperiam tenetur ut harum asperiores doloribus nobis, debitis accusantium ab quidem ratione? Tenetur, doloremque! lorem20</p>
+            </div>
+            <div class="col-sm-5 productmachinediv">
+              <a href="{% static 'images/productmachine3.png' %}" data-fancybox="gallery" data-caption="VASAI-MACHINE SHOP"><img src="{% static 'images/productmachine3.png' %}" alt="" class="productmachine col-sm-3" data-aos="fade-right" data-aos-duration="1500"></a>
+              <a href="{% static 'images/productmachine4.png' %}" data-fancybox="gallery" data-caption="VASAI-MACHINE SHOP"><img src="{% static 'images/productmachine4.png' %}" alt="" class="productmachine col-sm-3" data-aos="fade-left" data-aos-duration="1500"></a>
+            
+            </div>
+            
+            
+        </div><br>
+        <div class="row">
+          <div class="col-sm-5 productmachinediv">
+            <a href="{% static 'images/productmachine5.png' %}" data-fancybox="gallery" data-caption="VASAI-MACHINE SHOP"><img src="{% static 'images/productmachine5.png' %}" alt="" class="productmachine col-sm-3" data-aos="fade-right" data-aos-duration="1500"></a>
+            <a href="{% static 'images/productmachine6.png' %}" data-fancybox="gallery" data-caption="VASAI-MACHINE SHOP"><img src="{% static 'images/productmachine6.png' %}" alt="" class="productmachine col-sm-3" data-aos="fade-left" data-aos-duration="1500"></a>
+          
+          </div>
+            <div class="col-sm-7 machine1">
+                <H3>Machine 3</H3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab cumque, magni aliquam fugiat, a et nobis dolore aliquid ad ut, perferendis blanditiis nihil! Quos saepe incidunt repudiandae veritatis autem, dolorem illum velit iure cumque eligendi libero aperiam tenetur ut harum asperiores doloribus nobis, debitis accusantium ab quidem ratione? Tenetur, doloremque! lorem50</p>
+              </div>
+            
+        </div>
+        
+        
+            
+            
+        </div>
+     </div>
+
+
+     
+    </section><br><br>
+
+    <section id="sativali">
+      <div class="container sativali_div">
+        <h2>Sativali Warehouse</h2>
+        <div class="row">
+          <div class="col-sm-5" data-aos="flip-up" data-aos-duration="2000">
+            <a href="{% static 'images/sativali1.png' %}" data-fancybox="gallery" data-caption="SATIVALI-MACHINE SHOP"><img src="{% static 'images/sativali1.png' %}" alt="" class="sativali_img"></a>
+          </div>
+          <div class="col-sm-7" >
+            <p class="paraall satpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis aliquam laborum sunt nostrum necessitatibus? Accusantium quis possimus porro! Fugiat distinctio ducimus similique a minima cupiditate sapiente. Dolores, aut modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, accusantium cupiditate corrupti eum doloremque pariatur illum dolor, animi repudiandae perspiciatis laudantium commodi explicabo nobis unde fugiat aut recusandae voluptates aperiam illo assumenda odio culpa maxime! Molestias quod recusandae totam alias autem voluptatibus veniam, cum dolorum numquam optio qui dolores iusto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque sunt tempora est alias earum ipsa soluta ut doloremque magni unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, mollitia tenetur. In nisi veniam, repellat aperiam illum at deserunt delectus?</p>
+          </div>
+        </div><br>
+        <div class="row">
+          
+          <div class="col-sm-7" >
+            <p class="paraall satpara1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, corporis aliquam laborum sunt nostrum necessitatibus? Accusantium quis possimus porro! Fugiat distinctio ducimus similique a minima cupiditate sapiente. Dolores, aut modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, accusantium cupiditate corrupti eum doloremque pariatur illum dolor, animi repudiandae perspiciatis laudantium commodi explicabo nobis unde fugiat aut recusandae voluptates aperiam illo assumenda odio culpa maxime! Molestias quod recusandae totam alias autem voluptatibus veniam, cum dolorum numquam optio qui dolores iusto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque sunt tempora est alias earum ipsa soluta ut doloremque magni unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, mollitia tenetur. In nisi veniam, repellat aperiam illum at deserunt delectus?</p>
+          </div>
+          <div class="col-sm-5" data-aos="flip-up" data-aos-duration="2000">
+            <a href="{% static 'images/sativali2.png' %}" data-fancybox="gallery" data-caption="SATIVALI-MACHINE SHOP"><img src="{% static 'images/sativali2.png' %}" alt="" class="sativali_img"></a>
+          </div>
+        </div>
+      </div>
+    </section><br>
+
+    <section id="rajkot">
+      <div class="container rajkot_div">
+        <h2>Rajkot-CNC VMC Machine Shop</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <a href="{% static 'images/rajkotmachine.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/rajkotmachine.png' %}" alt="" class="rajkotmachine" data-aos="fade-right" data-aos-duration="2000"></a>
+            <a href="{% static 'images/rajkotmachine1.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/rajkotmachine1.png' %}" alt="" class="rajkotmachine" data-aos="fade-left" data-aos-duration="2000"></a>
+            <a href="{% static 'images/rajkotmachine.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/rajkotmachine2.png' %}" alt="" class="rajkotmachine" data-aos="fade-right" data-aos-duration="2000"></a>
+            <a href="{% static 'images/rajkotmachine.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/rajkotmachine3.png' %}" alt="" class="rajkotmachine" data-aos="fade-left" data-aos-duration="2000"></a>
+          </div>
+          <div class="col-sm-7">
+            <p class="paraall satpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptas amet assumenda placeat laborum ipsam tempore unde fugiat quod tempora deleniti hic adipisci, excepturi illum, minima voluptatem eum labore! Nisi, suscipit dolorem, exercitationem, nesciunt nam ad sunt quod accusantium minus placeat facere consectetur libero magni repellendus dolores architecto? Nostrum, quos.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, enim? Reprehenderit veritatis ex, recusandae vitae minus nesciunt eveniet assumenda vero praesentium illum maxime ducimus sapiente temporibus debitis aliquam blanditiis voluptas nihil id corporis! A perferendis voluptatibus corrupti odit vitae dolorum aut ab aliquam nemo cupiditate, unde voluptates ullam sunt! Est, earum dolore. Ratione rem eveniet, eum non iste totam commodi iusto repudiandae quia, neque eligendi explicabo velit suscipit tenetur animi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+          </div>
+        </div>
+      </div>
+    </section><br>
+
+    <section id="solapur">
+      <div class="container rajkot_div">
+        <h2>Solapur Foundary Division</h2>
+        <div class="row">
+          <div class="col-sm-7">
+            <p class="paraall satpara1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptas amet assumenda placeat laborum ipsam tempore unde fugiat quod tempora deleniti hic adipisci, excepturi illum, minima voluptatem eum labore! Nisi, suscipit dolorem, exercitationem, nesciunt nam ad sunt quod accusantium minus placeat facere consectetur libero magni repellendus dolores architecto? Nostrum, quos.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, enim? Reprehenderit veritatis ex, recusandae vitae minus nesciunt eveniet assumenda vero praesentium illum maxime ducimus sapiente temporibus debitis aliquam blanditiis voluptas nihil id corporis! A perferendis voluptatibus corrupti odit vitae dolorum aut ab aliquam nemo cupiditate, unde voluptates ullam sunt! Est, earum dolore. Ratione rem eveniet, eum non iste totam commodi iusto repudiandae quia, neque eligendi explicabo velit suscipit tenetur animi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+          </div>
+          <div class="col-sm-5">
+            <a href="{% static 'images/solapur_foundary.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur_foundary.png' %}" alt="" class="rajkotmachine" data-aos="fade-right" data-aos-duration="2000"></a>
+            <a href="{% static 'images/solapur_melting.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur_melting.png' %}" alt="" class="rajkotmachine" data-aos="fade-left" data-aos-duration="2000"></a>
+            <a href="{% static 'images/solapur_2.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur_2.png' %}" alt="" class="rajkotmachine" data-aos="fade-right" data-aos-duration="2000"></a>
+            <a href="{% static 'images/solapur3.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur3.png' %}" alt="" class="rajkotmachine" data-aos="fade-left" data-aos-duration="2000"></a>
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="col-sm-5">
+            <a href="{% static 'images/solapur4.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur4.png' %}" alt="" class="rajkotmachine" data-aos="fade-right" data-aos-duration="2000"></a>
+            <a href="{% static 'images/solapur5.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur5.png' %}" alt="" class="rajkotmachine" data-aos="fade-left" data-aos-duration="2000"></a>
+            <a href="{% static 'images/solapur6.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur6.png' %}" alt="" class="rajkotmachine" data-aos="fade-right" data-aos-duration="2000"></a>
+            <a href="{% static 'images/solapur7.png' %}" data-fancybox="gallery" data-caption="RAJKOT-MACHINES SHOP"><img src="{% static 'images/solapur7.png' %}" alt="" class="rajkotmachine" data-aos="fade-left" data-aos-duration="2000"></a>
+          </div>
+          <div class="col-sm-7">
+            <p class="paraall satpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptas amet assumenda placeat laborum ipsam tempore unde fugiat quod tempora deleniti hic adipisci, excepturi illum, minima voluptatem eum labore! Nisi, suscipit dolorem, exercitationem, nesciunt nam ad sunt quod accusantium minus placeat facere consectetur libero magni repellendus dolores architecto? Nostrum, quos.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, enim? Reprehenderit veritatis ex, recusandae vitae minus nesciunt eveniet assumenda vero praesentium illum maxime ducimus sapiente temporibus debitis aliquam blanditiis voluptas nihil id corporis! A perferendis voluptatibus corrupti odit vitae dolorum aut ab aliquam nemo cupiditate, unde voluptates ullam sunt! Est, earum dolore. Ratione rem eveniet, eum non iste totam commodi iusto repudiandae quia, neque eligendi explicabo velit suscipit tenetur animi? Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section><br>
+
+
+    
+       <!-- Footer -->
+       <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-2 topfooter">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 footerrow">
+              <!-- Grid column -->
+              <div class="col-sm-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white" >AboutUs</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Quality</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center footer_txt">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-2">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          All the © Copyrights are reserved by LINIT EXPORTS PVT. LTD.
+          <a class="text-white" href="https://mdbootstrap.com/"
+             ></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="static/js/jquery.fancybox.min.js"></script>
+  <script src="static/js/custom.js"></script>
+  
+  
+</body>
+</html>

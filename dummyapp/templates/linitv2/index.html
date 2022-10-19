@@ -1,0 +1,610 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" type="images/png" href="{% static 'images/logo.png' %}"> 
+    <title>Linit</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'js/custom.js' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% comment %} <link rel="stylesheet" href="contactpage"> {% endcomment %}
+   
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="{% static 'images/White.png' %}" alt="linit_logo" style="width:50px;margin-left:25px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pumppage">Pump Components</a></li>
+              <li><a class="dropdown-item" href="valvepage">Valve Components</a></li>
+              <li><a class="dropdown-item" href="CNCpage">CNC Turned Components</a></li>
+              <li><a class="dropdown-item" href="pipepage">Pipe Fittings</a></li>
+              <li><a class="dropdown-item" href="stainlesssteelpage">Stainless Steal Fasteners</a></li>
+              <li><a class="dropdown-item" href="rubberpage">Rubber Moulded Parts</a></li>
+              <li><a class="dropdown-item" href="gallerypage">Product Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productionpage">Production</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="qualitypage">Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rotterdampage">Rotterdam</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfomancepage">Perfomance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="life_at_linitpage">Life at Linit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="careerspage">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactpage">Contact Us</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#aboutus">About Us</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+      <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active slide0">
+              <h1 id="main" data-aos="fade-right" data-aos-duration="5000" data-aos-easing="ease-in-quad">We Are Engineering <br>The Future.</h1>
+            </div>
+            <div class="carousel-item slide1">
+              <h1 id="main" data-aos="zoom-out">State of The Art Machining<br> and Manufacturing </h1>
+              
+            </div>
+            <div class="carousel-item slide2">
+              <h1 id="main">Wide Range of Stainless<br>Steel Fasteners</h1>
+              
+            </div>
+            <div class="carousel-item slide3">
+              <h1 id="main">Ready To Asseble<br>Components</h1>
+            </div>
+            <div class="carousel-item slide4">
+              <h1 id="main">Precision, Quality & Design<br> Always Uncompromising</h1>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        
+  </section>
+    <!-- <section id="aboutus1">
+      <div class="centered">
+        <h1 id="main">We Are Engineering <br>The Future.</h1>
+        <p id="sub">State of The Art Machining and Manufacturing </p>
+      </div>
+    </section> -->
+  <section id="aboutus">
+
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="row " data-aos="fade-up" data-aos-duration="5000" data-aos-easing="ease-in-quad">
+          <div class="col-sm-2 square"><p class="square_text mdsquare1">SS Fasteners</p></div><br>
+          <div class="col-sm-2 square"><p class="square_text2 mdsquare2">SS Investment Castings</p></div><br>
+          <div class="col-sm-2 square"><p class="square_text3 mdsquare3">CNC/VMC Machining</p></div><br>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 square" data-aos="fade-left" data-aos-duration="5000" data-aos-easing="ease-in-quad"><p class="square_text4 mdsquare4">SS Fittings</p></div><br>
+          <div class="col-sm-2 square1"><img src="{% static 'images/White.png' %}" id="midlinit1" alt=""></div><br>
+          <div class="col-sm-2 square" data-aos="fade-right" data-aos-duration="5000" data-aos-easing="ease-in-quad"><p class="square_text5 mdsquare5">Sourcing</p></div><br>
+        </div>
+        <div class="row" data-aos="fade-down" data-aos-duration="5000" data-aos-easing="ease-in-quad">
+          <div class="col-sm-2 square"><p class="square_text6 mdsquare6">Precision Machining</p></div><br>
+          <div class="col-sm-2 square"><p class="square_text7 mdsquare7">Procurement</p></div><br>
+          <div class="col-sm-2 square"><p class="square_text8 mdsquare8">Logistics</p></div><br>
+        </div>
+      
+      </div>
+      <div class="col-sm-5 belowaboutimg " data-aos="zoom-in" data-aos-duration="5000" data-aos-easing="ease-in-quad">
+        
+          <p class="abouthead1">NO.1</p>
+          <p class="abouthead1">Focus</p>
+          <p class="abouthead1">100%</p>
+          <p class="abouthead1">Quality</p>
+        
+      </div>
+    </div>
+    
+  </section>
+  <section id="about2">
+    <div id="Carousel" class="carousel slide carousel-fade" data-interval="false">
+      <div class="carousel-inner" >
+        <div class="carousel-item active slide10">
+          <div class="row">
+            <div class="col-sm-5">
+              <!-- <div class="col-sm-2 square2" data-aos="fade-left" data-aos-duration="5000" data-aos-easing="ease-in-quad"><img src="images/White.png" id="midlinit" alt=""></div><br> -->
+            </div>
+            <div class="col-sm-6 about2paragrah" data-aos="fade-right" data-aos-duration="5000" data-aos-easing="ease-in-quad">
+              <h2 class="about_head">Vision Statement:</h2>
+              <p class="missionpara">To be world’s most dynamic Engineering Goods Supply & 
+                Procurement Company.</p>
+              <h2 class="about_head missionpara miss">Mission Statement</h2>
+              <p class="missionpara miss1">To achieve the company vision by relentlessly gaining</p>
+              <ul class="missionpara miss1">
+                <li>Paramount Skills,</li>
+                <li>Modern Technology,</li>
+                <li>Economical Production,</li>
+                <li>Product Versatility.</li>
+    
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item slide11">
+          <div class="row">
+            <div class="col-sm-5">
+              <!-- <div class="col-sm-2 square3 " data-aos="fade-left" data-aos-duration="5000" data-aos-easing="ease-in-quad"><img src="images/White.png" id="midlinit" alt=""></div><br> -->
+            </div>
+            <div class="col-sm-6 about2paragrah " data-aos="fade-right" data-aos-duration="5000" data-aos-easing="ease-in-quad">
+              <h2 class="about_head ">Quality Policy:</h2>
+              <p class="missionpara1  qpolicy">It is the policy of Linit Exports Private Limited to exceed our customer’s 
+                expectations in the production of intricate machined components, whilst 
+                providing them with competitive pricing within their stipulated delivery 
+                time-frame.
+              Through partnerships with our customers and suppliers, we will 
+                  continuously improve the quality of our processes and products as we 
+                  continue to strive for achieving our company Mission and Vision. </p>
+              <h2 class="about_head missionpara newquality2">Quality Objectives:</h2>
+              <ul class="missionpara newquality3">
+                <li>To improve the delivery performance,</li>
+                <li>To increase the customer satisfaction,</li>
+                <li>To reduce customer end rejections,</li>
+                <li>To reduce customer complaints.</li>
+    
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <div class="carousel-item slide12">
+          <div class="row ">
+            <div class="col-sm-5">
+              <!-- <div class="col-sm-2 square4 " data-aos="fade-left" data-aos-duration="5000" data-aos-easing="ease-in-quad"><img src="images/White.png" id="midlinit" alt=""></div><br> -->
+            </div>
+            <div class="col-sm-6 about2paragrah text-black" data-aos="fade-right" data-aos-duration="5000" data-aos-easing="ease-in-quad">
+              <h2 class="about_head">Enivironment,Health & Safety</h2>
+              <ul class="missionpara1 env">
+                <li>Linit has adopted a well-documented EHS policy & procedures.</li>
+                <li>This initiative was driven by complying with the stringent requirement of our mulitinational customers and was fulfilled entirely while comforting to their regular Adults.
+                </li>
+                <li>Thus EHS system involves major aspects of ISO 14001: 2004 and OSHAS 18001 through we do not have these certifications as such .</li>
+                <li>Linit complies with all the Local Factory and Labor Laws</li>
+                <li>Along with this,LINIT has also created its Business Code of Conduct for its employees and Suppliers which is appropriately reciprocated by them.</li>
+    
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+        <i class="fa-solid fa-angle-left about_arrow fa-3x"></i>
+        <span class="visually-hidden">Previous</span>
+      </button> -->
+      <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+        <i class="fa-solid fa-angle-right about_arrow0 fa-3x"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </section><br><BR></BR>
+
+  <section id="years">
+    <div class="container mile_div ">
+      <h1 class="years_head">Milestones</h1><br>
+
+        <div class="row">
+          <div class="col-sm-4 mile">
+            <div class="years t4" data-aos="zoom-in" data-aos-duration="2000"><div class="year">1998</div></div><img src="{% static 'images/thinarrow1.png' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara pr98"><ul>
+              <li>Tradding of SS Fasteners,casting and forging</li>
+              <li>Garment (APPAREL) exports</li>
+              <li>Sourcing of automotive components for SAL UK tier 1 supplier to new HOLLAND tractors (CNH)</li>
+            </ul></div>
+            
+            
+          </div>
+          <div class="col-sm-4 mile gr1">
+            <div class="years yr2" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2001</div></div><img src="{% static 'images/thinarrow1.png' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara tm1">
+              <ul>
+                <li>Pump & valve components</li>
+                <li>SS Fasteners</li>
+                <li>Sourcing of automotive & tractor components</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="col-sm-4 gr1">
+            <div class="years t4" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2004</div></div>
+            <div class="timeline_content1 milepara pr4">
+              <ul>
+                <li>Started manufacturing of SS Fasteners through subcontracting or outsourcing from "Siddharth"</li>
+                <li>In house inspection facility including spectrometer</li>
+                <li>Trading and outsourcing activity continues</li>
+              </ul>
+            </div><img src="{% static 'images/finaldown.webp' %}" alt="" class="downarrow1">
+            
+          </div>
+        </div><br><br>
+        
+
+
+        <div class="row revers tot3">
+        
+          <div class="col-sm-4 gr1">
+            <div class="years" id="t8" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2008</div></div><img src="{% static 'images/arrow_left.webp' %}" alt="" class="rightarrow">
+            <div class="timeline_content  milepara" id="pr8"><ul>
+              <li>Added 9 CNC and VMC machines (Total 12)</li>
+            </ul></div>
+            <img src="{% static 'images/finaldown.webp' %}" alt="" class="downarrow3">
+            
+          </div>
+
+          <div class="col-sm-4 mdmile1">
+            <div class="years t7" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2007</div></div><img src="{% static 'images/arrow_left.webp' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara pr7">
+              <ul><li>Added 2 CNC machines (Total 3)</li></ul></div>     
+          </div>  
+          <div class="col-sm-4 ">
+            <div class="years yr2" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2006</div></div>
+            <div class="timeline_content1 milepara tm3 pr6"><ul>
+              <li>backward integration through In-house manufacturing with one CNC turning</li>
+            </ul></div>
+            
+          </div>  
+
+
+        </div><br><br>  
+
+        <div class="row yr9">
+
+          <div class="col-sm-4 mile mdmile1 ">
+            <div class="years yr2" id="t9" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2009</div></div><img src="{% static 'images/thinarrow1.png' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara "> <ul>
+              <li>Added 14 CNC and VMC machines (Total 26)</li>
+            </ul></div>
+            
+          </div>
+
+          <div class="col-sm-4 mile mdmile1 ">
+            <div class="years" id="t10" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2010</div></div><img src="{% static 'images/thinarrow1.png' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara" id="pr10"><ul>
+              <li>Added 18 CNC and VMC machines (Total 44)</li></ul></div>
+            
+          </div>  
+
+          <div class="col-sm-4 ">
+            <div class="years" id="yr11"  data-aos="zoom-in" data-aos-duration="2000"><div class="year">2011</div></div>
+              <div class="timeline_content1 milepara" id="pr11"><ul><li>State of the Art machining facility at RAJKOT-3100 sq m shop floor</li></ul></div>
+              <img src="{% static 'images/finaldown.webp' %}" alt="" class="downarrow2">
+            
+          </div>
+        </div>
+        <div class="row revers yr12">
+          <div class="col-sm-4 ">
+            <div class="years" id="t14" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2014</div></div><img src="{% static 'images/arrow_left.webp' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara " id="pr14">
+              <ul>
+                <li>Moved to new corporate office at Western Edge II, Borivali-Mumbai</li>
+              </ul>
+            </div>
+            <img src="{% static 'images/finaldown.webp' %}" alt="" class="downarrow3">
+            
+          </div>
+          <div class="col-sm-4 mile mdmile1">
+            <div class="years " id="t13" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2013</div></div><img src="{% static 'images/arrow_left.webp' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara " id="pr13"><ul>
+              <li>Acquired investment casting foundary at SOLAPUR</li>
+          </ul></div>
+            
+          </div>
+          <div class="col-sm-4 mdmile1">
+            <div class="years yr2" id="t12" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2012</div></div>
+            <div class="timeline_content1 milepara" id="pr12">
+              <ul><li>Consolidation of Vasai(Mumbai) facilities at "K.T Sapphier" 2900 sq m to bring all under one roof</li></ul></div>
+          </div>
+          
+        </div><br><br>
+
+        <div class="row yr15">
+
+          <div class="col-sm-4 mile mdmile1">
+            <div class="years" id="t15" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2015</div></div><img src="{% static 'images/thinarrow1.png' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara " id="pr15"><ul>
+              <li>Added 2 CNC machines (Total 3)</li>
+            </ul></div>
+          </div>  
+
+          
+          <div class="col-sm-4 mile mdmile1">
+            <div class="years yr2" id="t16" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2016</div></div><img src="{% static 'images/thinarrow1.png' %}" alt="" class="rightarrow">
+            <div class="timeline_content  milepara tm2" id="pr16"><ul>
+              <li>Tieup with Tigers Internationl Worldwide,roterdam to offer DAP/DDp shipments to over 30 customers in</li>
+              <li>Germany,Netherland,France,Austria,Poland,Finland,Sweden & possibilty of VMI</li>
+            </ul></div>
+          </div>  
+
+      
+          <div class="col-sm-4 mile mdmile1 ">
+            <div class="years" id="t17" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2017</div></div>
+            <div class="timeline_content1 milepara " id="pr17"> <ul>
+              <li>Logistics/warehousing facility for fasteners at Sativali-Mumbai</li>
+            </ul></div>
+            <img src="{% static 'images/finaldown.webp' %}" alt="" class="downarrow1">
+            
+          </div>
+      
+        </div><br><br>
+        
+          
+        <div class="row revers y222">
+          <div class="col-sm-4 ">
+            <div class="years yr20" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2020</div></div><img src="{% static 'images/arrow_left.webp' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara tm2"><ul>
+              <li>Consolidation of Vasai(Mumbai) facilities at "K.T Sapphier" 2900 sq m to bring all under one roof</li>
+          </ul></div>
+          <img src="{% static 'images/finaldown.webp' %}" alt="" class="downarrow3">
+          </div>
+
+          <div class="col-sm-4 mile mdmile1 yr17">
+            <div class="years" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2019</div></div><img src="{% static 'images/arrow_left.webp' %}" alt="" class="rightarrow">
+            <div class="timeline_content milepara"><ul>
+              <li>State of the Art machining facility at RAJKOT-3100 sq m shop floor
+          </ul></div>
+            
+            
+          </div>
+
+          <div class="col-sm-4 mile mdmile1">
+            <div class="years yr2" data-aos="zoom-out" data-aos-duration="2000"><div class="year">2018</div></div>
+            <div class="timeline_content1 milepara tm3"><ul>
+              <li>Added 30 CNC and VMC machines (Total 96)</li>
+            </ul></div>
+            
+            
+          </div>
+    
+        </div>
+
+        <br><br>
+        <div class="row revers yr21">
+
+          <div class="col-sm-4 mile mdmile1">
+            <div class="years" data-aos="zoom-in" data-aos-duration="2000"><div class="year">2021</div></div>
+            <div class="timeline_content milepara lastmile"><ul>
+              <li>Acquired investment casting foundary at SOLAPUR</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+    </div>  
+  </section>
+    <!-- <section id="about4">
+      <div class="row ">
+        <div class="col-sm-4">
+          <div class="col-sm-2 square4 " data-aos="fade-left" data-aos-duration="5000" data-aos-easing="ease-in-quad"><img src="images/White.png" id="midlinit" alt=""></div><br>
+        </div>
+        <div class="col-sm-6 about2paragrah text-black" data-aos="fade-right" data-aos-duration="5000" data-aos-easing="ease-in-quad">
+          <h1 class="about_head">Enivironment,Health & Safety</h1>
+          <ul>
+            <li>Linit has adopted a well-documented EHS policy & procedures.</li>
+            <li>This initiative was driven by complying with the stringent requirement of our mulitinational customers and was fulfilled entirely while comforting to their regular Adults.
+            </li>
+            <li>Thus EHS system involves major aspects of ISO 14001: 2004 and OSHAS 18001 through we do not have these certifications as such .</li>
+            <li>Linit complies with all the Local Factory and Labor Laws</li>
+            <li>Along with this,LINIT has also created its Business Code of Conduct for its employees and Suppliers which is appropriately reciprocated by them.</li>
+
+          </ul>
+        </div>
+      </div>
+    </section> -->
+   
+       
+
+  <section id="ourteam">
+    
+    <div class="container ">
+      <h2 class="teamhead">Our Team</h2>
+      
+      <div class="row text-black team">
+        
+          <div class="col-sm-3 " data-aos="fade-up" data-aos-duration="1000">
+            <a href=""><img src="{% static 'images/lini logo.webp' %}" alt="" class="radius"></a><br><br>
+            <h4 class="team_member">Nitin Karjatkar</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate temporibus doloremque nulla. Suscipit sed esse adipisci eum optio molestias ullam eius sequi odio consequatur, fuga quam eligendi architecto vel!<span class="info_team1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span> </p>
+            <button type="button" class="team_button1">LEARN MORE</button>
+          </div>
+          <div class="col-sm-3" data-aos="fade-up" data-aos-duration="1500">
+            <a href=""><img src="{% static 'images/lini logo.webp' %}" alt="" class="radius"></a><br><br>
+            <h4 class="team_member">Lily Karjatkar</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate temporibus doloremque nulla. Suscipit sed esse adipisci eum optio molestias ullam eius sequi odio consequatur, fuga quam eligendi architecto vel!<span class="info_team2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span> </p>
+            <button type="button" class="team_button2">LEARN MORE</button>
+          </div>
+        
+          <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
+            <a href=""><img src="{% static 'images/lini logo.webp' %}" alt="" class="radius"></a><br><br>
+            <h4 class="team_member">Lorem Ipsum</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate temporibus doloremque nulla. Suscipit sed esse adipisci eum optio molestias ullam eius sequi odio consequatur, fuga quam eligendi architecto vel!<span class="info_team3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span> </p>
+            <button type="button" class="team_button3">LEARN MORE</button>
+          </div>
+          
+          <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2500">
+            <a href=""><img src="{% static 'images/lini logo.webp' %}" alt="" class="radius"></a><br><br>
+            <h4 class="team_member">Lorem Ipsum</h4>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate temporibus doloremque nulla. Suscipit sed esse adipisci eum optio molestias ullam eius sequi odio consequatur, fuga quam eligendi architecto vel!<span class="info_team4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span> </p>
+            <button type="button" class="team_button4">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  
+       <!-- Footer -->
+       <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-2 topfooter">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 footerrow">
+              <!-- Grid column -->
+              <div class="col-sm-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white" >AboutUs</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Quality</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center footer_txt">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-2">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          All the © Copyrights are reserved by LINIT EXPORTS PVT. LTD.
+          <a class="text-white" href="https://mdbootstrap.com/"
+             ></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js">
+  </script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  
+  
+</body>
+</html>

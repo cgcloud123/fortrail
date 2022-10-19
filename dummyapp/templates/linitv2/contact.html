@@ -1,0 +1,271 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" type="images/png" href="{% static 'images/logo.png' %}">
+    <title>Linit</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'js/custom.js' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="contactpage"> -->
+   
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'indexpage' %}"><img src="{% static 'images/White.png' %}" alt="linit_logo" style="width:50px;margin-left:25px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'indexpage' %}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pumppage">Pump Components</a></li>
+                  <li><a class="dropdown-item" href="valvepage">Valve Components</a></li>
+                  <li><a class="dropdown-item" href="CNCpage">CNC Turned Components</a></li>
+                  <li><a class="dropdown-item" href="pipepage">Pipe Fittings</a></li>
+                  <li><a class="dropdown-item" href="stainlesssteelpage">Stainless Steal Fasteners</a></li>
+                  <li><a class="dropdown-item" href="rubberpage">Rubber Moulded Parts</a></li>
+                  <li><a class="dropdown-item" href="gallerypage">Product Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productionpage">Production</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qualitypage">Quality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rotterdampage">Rotterdam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfomancepage">Perfomance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="life_at_linitpage">Life at Linit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careerspage">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="contactus1">
+        <div class="container text-white contact_head" id="overlay1">
+          {% comment %} <img src="{% static 'images/laser-g4b38bfec1_1920.jpg' %}" alt=""> {% endcomment %}
+          <h1 data-aos="fade-down" data-aos-duration="2000">Contact Us</h1> 
+
+        </div>
+        
+
+      </section>
+      <!-- <section id='id1'>
+          
+      </section>
+     -->
+        
+    <section id="contactus">
+      
+      <div class="container ">
+      
+        <div class="row ">
+          
+          <div class="con col-sm-6 new" data-aos="zoom-in">
+            
+            <h2>Corporate and Registered Office</h2>
+            <h3>Linit Exports Private Limited :</h3><br>
+            <h4><i class="fa-solid fa-location-dot add_icon"></i> Address:</h4>
+            <p>112/113, Western Edge II,Off. Western Express Highway,<br>
+               Borivali-East,Mumbai - 400066, INDIA.</p>
+            <h4><i class="fa-solid fa-envelope add_icon"></i> Email:</h4>
+            <p>abc@gmail.com</p>
+            <h4><i class="fa-solid fa-mobile-retro add_icon"></i> Phone Number:</h4>
+            <p>+91 98765-43214</p>
+           
+        
+          </div> 
+         
+     
+          {% comment %} <div class="col-sm-6 contact_img" > {% endcomment %}
+            {% comment %} <img src="{% static 'images/hot_forging.jpg' %}" alt="" data-aos="fade-up" data-aos-duration="2000"  data-aos-anchor-placement="top-center"> {% endcomment %}
+            {% comment %} </div>  {% endcomment %}
+          <div class="col-sm-6 card" data-aos="zoom-in">
+          
+            <h3>Hey There,</h3>
+            <p>Fill out this form and get a call from one of our sales executive to arrange a meeting.</p>
+                <form action="" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <p align="center"><button class="btn btn-primary" type="submit">Submit</button></p>
+                {% for message in messages %}
+                <p class="successmessage">{{message}}</p>
+                {% endfor %}
+              </form>   
+
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="map">
+      <h2 id="plant_head">LINIT On Globe</h2>
+      <div class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">
+        
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZhntUyOgZIFn5Xszv5y8BroY1w5fk7c&ehbc=2E312F" width="100%" height="480"></iframe>
+
+      </div>
+    </section>
+    
+    
+
+        
+       <!-- Footer -->
+       <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-2 topfooter">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 footerrow">
+              <!-- Grid column -->
+              <div class="col-sm-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white" >AboutUs</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Quality</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+            
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center footer_txt">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-2">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          All the © Copyrights are reserved by LINIT EXPORTS PVT. LTD.
+          <a class="text-white" href="https://mdbootstrap.com/"
+             ></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js">
+  </script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  
+  
+</body>
+</html>

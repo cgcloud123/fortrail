@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" type="images/png" href="{% static 'images/logo.png' %}">
+    <title>Linit</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'js/custom.js' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'contact.html' %}"> {% endcomment %}
+   
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'indexpage' %}"><img src="{% static 'images/White.png' %}" alt="linit_logo" style="width:50px;margin-left:25px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'indexpage' %}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pumppage">Pump Components</a></li>
+                  <li><a class="dropdown-item" href="valvepage">Valve Components</a></li>
+                  <li><a class="dropdown-item" href="CNCpage">CNC Turned Components</a></li>
+                  <li><a class="dropdown-item" href="pipepage">Pipe Fittings</a></li>
+                  <li><a class="dropdown-item" href="stainlesssteelpage">Stainless Steal Fasteners</a></li>
+                  <li><a class="dropdown-item" href="rubberpage">Rubber Moulded Parts</a></li>
+                  <li><a class="dropdown-item" href="gallerypage">Product Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productionpage">Production</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qualitypage">Quality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rotterdampage">Rotterdam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfomancepage">Perfomance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="life_at_linitpage">Life at Linit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careerspage">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactpage">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section id="pupmcomponent">
+    <div class="container text-white contact_head">
+        <h1 data-aos="fade-down" data-aos-duration="2000">Pump Components</h1> 
+      </div>
+</section><br>
+<section id="pump2">
+    <div class="container">
+        <h2>Pump Components</h2>
+        <p class="satpara1">We provide ready-to-assemble "As Cast or Fully Machined" from Castings or from Bar Stock components for Submersible Pump, Vertical Turbine Pump, End Suction Pump, Split Casing Pump, Process Pump, Slurry Pumps and other Special purpose pumps. Main pump components include Casings, Diffusers, Impellers, Covers, Bushes, Shafts, Sleeves, Neck Rings, Couplings, Bearings and other customized components.</p>
+    </div>
+</section><br>
+
+<section id="pump3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h3>Material Grades:</h3>
+                <p class="paraall satpara1">Stainless Steel Grades: 1.4301, 1.4305, 1.4401, 1.4404, 1.4571, 1.4021, 1.4057, Duplex, Carbon Steel, Brass & Aluminium.</p>
+                <h3>Approvals - For Raw Material Source, wherever applicable:</h3>
+                <p class="paraall satpara1">PED 97/23/EC and AD2000 MARKBLATT, WO/W5/W10</p>
+                <h3>Foundry Capacity:</h3>
+                <p class="paraall satpara1">Sand Castings: Upto 6000 kgs - Single piece
+                    Investment Castings: Upto 100 kgs - Single piece</p>
+                <h3>Forgings:</h3>
+                <p class="paraall satpara1">Open Die: Upto 600 kgs
+                    Closed Die: Upto 120 kgs
+                    Ring Rolling: Upto 150 kgs & Dia 1000 mm</p>
+                <h3>Machining Capacity:</h3>
+                <p class="paraall satpara1">26 CNC / VMC's In-house, Dia upto 600 mm, Length upto 1000 mm</p>
+                <h3>Quality Assurance:</h3>
+                <p class="paraall satpara1">Dedicated experienced engineers to monitor the manufacturing processes.</p>
+            </div>
+            <div class="col-sm-7 pupm3img">
+              <a href="{% static 'components_img/pump_components/pump_components (1).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (1).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (2).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (2).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (3).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (3).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (4).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (4).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (5).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (5).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (6).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (6).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (7).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (7).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (8).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (8).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (9).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (9).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (10).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (10).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (11).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (11).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (12).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (12).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (13).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (13).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (14).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (14).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (15).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (15).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (16).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (16).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (16).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (16).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (17).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (17).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (18).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (18).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (19).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (19).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (20).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (20).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (21).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (21).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (22).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (22).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (23).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (23).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (24).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (24).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (25).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (25).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (26).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (26).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (27).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (27).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (28).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (28).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (29).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (29).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (30).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (30).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (31).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (31).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (32).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (32).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (33).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (33).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (34).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (34).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (35).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (35).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (36).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (36).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (37).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (37).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (38).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (38).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (39).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (39).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (40).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (40).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (41).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (41).jpg' %}" alt="" class="pump_img"></a>
+              <a href="{% static 'components_img/pump_components/pump_components (42).jpg' %}" data-fancybox="gallery"><img src="{% static 'components_img/pump_components/pump_components (42).jpg' %}" alt="" class="pump_img"></a>
+                
+            </div>
+        </div><br><br>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="" class="pump_anchor"><div class="pump_button">Pump Components</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="valvepage" class="pump_anchor"><div class="pump_button">Valve Components</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="CNCpage" class="pump_anchor"><div class="pump_button">CNC Turned Components</div></a>
+          </div>
+          
+        </div><br><br>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="pipepage" class="pump_anchor"><div class="pump_button">Pipe Fittings</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="stainlesssteelpage" class="pump_anchor"><div class="pump_button">Stainless Steel Fasteners</div></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="rubberpage" class="pump_anchor"><div class="pump_button">Ruber Moulded Parts</div></a>
+          </div>
+          
+        </div>
+    </div><br><br>
+</section>
+    
+    
+
+       
+       <!-- Footer -->
+       <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-2 topfooter">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 footerrow">
+              <!-- Grid column -->
+              <div class="col-sm-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white" >AboutUs</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Quality</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center footer_txt">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-2">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          All the © Copyrights are reserved by LINIT EXPORTS PVT. LTD.
+          <a class="text-white" href="https://mdbootstrap.com/"
+             ></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+  
+  <script src="{% static 'js/custom.js' %}"></script>
+  
+  
+</body>
+</html>

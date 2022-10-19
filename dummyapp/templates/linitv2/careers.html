@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" type="images/png" href="{% static 'images/logo.png' %}">
+    <title>Linit</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" href="{% static 'js/custom.js' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% comment %} <link rel="stylesheet" href="contactpage"> {% endcomment %}
+   
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'indexpage' %}"><img src="{% static 'images/White.png' %}" alt="linit_logo" style="width:50px;margin-left:25px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'indexpage' %}">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pumppage">Pump Components</a></li>
+                  <li><a class="dropdown-item" href="valvepage">Valve Components</a></li>
+                  <li><a class="dropdown-item" href="CNCpage">CNC Turned Components</a></li>
+                  <li><a class="dropdown-item" href="pipepage">Pipe Fittings</a></li>
+                  <li><a class="dropdown-item" href="stainlesssteelpage">Stainless Steal Fasteners</a></li>
+                  <li><a class="dropdown-item" href="rubberpage">Rubber Moulded parts</a></li>
+                  <li><a class="dropdown-item" href="gallerypage">Product Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productionpage">Production</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qualitypage">Quality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rotterdampage">Rotterdam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfomancepage">Perfomance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="life_at_linitpage">Life at Linit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careerspage">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactpage">Contact Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="career">
+        <div class="text-white career_head " data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease-out-sine">
+            <h1>Careers with LINIT</h1>
+        </div>
+    </section>
+    <section id="career2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="career2">
+                        <h2>Why LINIT?</h2>
+                        <p class="paraall satpara1">
+                          The achievements of an organisation are the results of the combined effort of each individual. First comes thought; then organisation of that thought, into ideas and plans; then transformation of those plans into reality.
+
+                          The Promoters Nitin Karjatkar and Lily Karjatkar who gave up their careers with a Multi National Company to start Linit have spared no efforts in seeing it Fly and soar.
+
+                          Having been in employment themselves, they understand the only way to get people to like working hard is to understand their Aspirations.
+
+                          Today, people must understand why they are working hard. Every individual in an organisation is motivated by something different.
+
+                          Linit with its total Manpower strength of over 300 employees at six locations:</p>
+
+                          <p class="paraall satpara1">Head Office: BORIVALI, MUMBAI
+                          Plant-1: VASAI (NEAR MUMBAI)CNC-VMC MACHINE SHOP, Vasai, Near Mumbai - 2900 SQM.
+                          Plant-2: RAJKOT CNC/VMC/ VTL MACHINE SHOP, Rajkot,Gujrat - 3100 SQM.
+                          Plant-3 (Foundry): SOLAPUR FOUNDRY DIVISION Solapur, Maharashtra - 5000 SQM.
+                          Plant-4: SATIVALI Logistics / Warehousing Vasai, Near Mumbai - 2000 SQM.
+                          Plant-5: PELHAR-VASAI / Raw Material Warehousing, Vasai Near Mumbai - 1000 SQM.</p>
+
+                         <p class="paraall satpara1">And has created an organisational structure that doesn't get in the way of its staff. We have a fantastic team of 111.
+                          </p>
+                        <p class="paraall satpara1">You can't build an adaptable organisation without adaptable people that come from various educational backgrounds. MBA's, Engineers, IT Professionals, Finance and Accounts Professionals, Quality Professionals and a supporting staff together create a Magic by facing Global challenges.</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 " data-aos="fade-left" data-aos-duration="2000">
+                    <img src="{% static 'images/welding-gdecf4aa3b_1920.jpg' %}" alt="" class="careimg">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="career3">
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col-sm-6 img2" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="{% static 'images/welding2.webp' %}" alt="">
+                    </div>
+                    <div class="col-sm-6" >
+                        <div class="career2">
+                            
+                            <p class="paraall newcarpara satpara1 car2">
+                              Women have been the driving force at LINIT. Of the 94 team Members - 40 are women Employees and 18 of these are Engineers.
+                              Like any other organisation Linit is rearing to spark new ideas. This is done by creating a special event dedicated to new thinking.
+                              The other is to look outside themselves to stimulate solutions.<br>
+
+                              Special Events at Linit:
+                              The Linit Premiere League: Cricket Match happening every year in February, between teams of various departments. All 300 employees, especially, CNC/VMC operators, QA Engineers, Helpers & Packers practice all the year round and display their sharpening skills and Talent.
+
+                              To infuse existing Teams with new Ideas and strengths - Linit regularly appoints Engineers and MBA's, who, based on their individual capacities grow and take on greater responsibility.
+
+                              Linit has for all its Employees a Group Mediclaim Insurance Policy, Gratuity, PF, ESIC, etc. all in place.
+
+                              The People @ Linit Follow an Official Code of Conduct and together
+
+                              Make it Good --- Make it Important ---- Make it Special.
+                              Linit is currently looking for career-oriented, hard-working professionals in the field of Quality Assurance, Production Vendor Development, Customer Support and Supply Chain.
+                              
+                            </p>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="employee">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container employeeall">
+              <div class="emp_img">
+                <img src="{% static 'images/employeemale.jpg' %}" alt="" class="emp_img1">
+                <h3>Amit Patil (Packing & Dispatch)</h3>
+                <p>Sr. Manager - Operations - Fasteners Division
+                  In Linit since: 01-September-2003</p>
+              </div>
+              <div class="emp_des">
+                <p>Iam working in Linit Exports Pvt. Ltd. Since 1st September 2003 i.e. more than seventeen years. To be honest enough, I had never feel that, I am the employee of this organisation. My directors have always given me sense of ownership & freedom to work. Being one of the senior member, it is my privilege that, I had seen the real growth of our organisation from a trading firm to in-house manufacturing unit. When I joined Linit, it was a very small office in 12, Tirupati Udoyg, Goregaon with basement. Then we move to G-1 & 2 at Siddharth & now we have very big KT Sapphire Building.
+                One thing I remembered very well, when we had moved to Siddharth, many people had doubts whether we can fully utilise that space or not. But within 2-3 years, we had found that, Siddharth was too small for us & that was the real sign of growth. Behind all these achievements & milestones, there are a lot of efforts take by all members of team & all respective departments.
+                But Hats off to our Directors, they are really dedicated, ambitious, co-operative, knowledgeable, self motivated & very down to earth persons. The way our Directors handle all crunch situations, is really something to learn from them. I am very proud to be a member of our team & really looking forward to have my part in all future growth of company.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container employeeall">
+              <div class="emp_img">
+                <img src="{% static 'images/emplyeefemale.png' %}" alt="" class="emp_img1">
+                <h3>Shravani Sawant (Business Development)</h3>
+                <P> Manager - Supply Chain Management
+                  In Linit Since: 14-March-2006</P>
+              </div>
+              <div class="emp_des">
+                <p>To me LINIT is "Life-IN-IT". I joined LINIT when it was a 25 people company. From 25 to 100 people today it has been a great achievement and I am proud that I have been a part of this journey. It is that vision, dynamism of our management that has shown us this change.
+                  Working with LINIT is always like "HOME AWAY FROM HOME" as it has a very open culture and offers sense of belonging for Individuals towards company. From my perspective my organisation has given me an opportunity to work with flexibility and that has helped me to strike an optimal balance between my family and work life.
+                  LINIT is a very focused company and knows exactly what we want to do and where we are heading. I have always had opportunities and challenges beyond the current role to prove myself and achieve greater heights. The management provides great work environment which is inductive for future growth. You will always see people smiling with LINIT.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container employeeall">
+              <div class="emp_img">
+                <img src="{% static 'images/emplyeefemale.png' %}" alt="" class="emp_img1">
+                <h3>Sayali Sawant (Finance & Audit)</h3>
+                <p>Sr. Manager - Finance and Accounts
+                  In Linit Since: 11-December-2006</p>
+              </div>
+              <div class="emp_des">
+                <p>
+                  I am working in Linit Exports Pvt. Ltd. since more than last ten years. I joined Linit as an Accountant in December 2006, got promoted in 2008 to Sr. Accountant & in 2010 as Deputy Manager - Finance & Audit. It has always been a growing trend not only because of my hard work but also due to proper guidance & co-operation from the Directors of my Company. They are ever encouraging to take up new jobs related to my Profile and I have learnt quite a lot from them.
+                  
+                  I started my career from 1998. Prior to Linit, I collectively had an experience of 8 years in Accounts, but I have never been a part of such an organised Company, Frankly speaking, Linit is not only Company for all of us but more like a family & that is because of our Directors (Mr. & Mrs. Karjatkar). They take care of every employee like their own family member. They are supremely dedicated, ambitious & self motivated persons. They handle all problems spiritually & carefully be it Financial, Legal, Production, Business expansion, Admin, etc.
+                  
+                  I am very proud to be a part of Linit Exports Pvt. Ltd. & wish to grow my Company constantly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container employeeall">
+              <div class="emp_img">
+                <img src="{% static 'images/emplyeefemale.png' %}" alt="" class="emp_img1">
+                <h3>Ms Asha Yadav - SCM</h3>
+                <P>Dy. Manager - Supply Chain Management
+                  In Linit Since: Dec 2005</P>
+              </div>
+              <div class="emp_des">
+                <p>It's been over 10 years in Linit, really a long period. I have seen company's growth & along with it even I have grown.
+                One of the unique feature of Lint is "Flat Organisation" no hierarchy at all, one single family, example of togetherness, integrity.
+                We have been given every single opportunity to prove our self, to prosper our talent & skills.
+                Truly i am thankful to be part of such a talented team, it has proven to be a good experience for me, i have been able to develop both personally & professionally.
+                I would really thanks the management of Linit for making me what I am today.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="container employeeall">
+              <div class="emp_img">
+                <img src="{% static 'images/employeemale.jpg' %}" alt="" class="emp_img1">
+                <h3>Mr.Purushottam G. Chillore</h3>
+                <P>Assitant Manager -Â Assistant MR
+                  In Linit Since July 16</P>
+              </div>
+              <div class="emp_des">
+                <p>
+                  I have been with LINIT since April 14. Outstanding people ,supportive management & working for company that helps people to prove that â€œYour Turning Point...â€ is the key to attract and the reason continue to stay. I think the most rewarding career moves are those that allow you to apply and utilize your past experiences, accomplishments and interests while still offering opportunity both personally & professionally. A life without passion & purpose is merely an existence. At LINIT , I have found purpose in working with clearities. I cherish to being a part of LINIT.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="container employeeall">
+              <div class="emp_img">
+                <img src="{% static 'images/employeemale.jpg' %}" alt="" class="emp_img1">
+                <h3>Mr. Niraj Sawant</h3>
+                <P>Asst. Manager - Packing & Shipping
+                  In Linit Since Feb 2007</P>
+              </div>
+              <div class="emp_des">
+                <p>
+                  I have practically grown up at Linit as far as my career is concerned. 9 years out of my 11-year career have been spent with the Linit family and I must say these have been years well spent.
+                  I joined here as a Office Asst & Raw material supervisor and the kind of exposure I have received has been phenomenal and has helped me mould myself.            
+                  After joining in Linit I have able to purchase my own home in Mumbai. Management has helped me for the same. Without their help this cannot be possible at that time. There are so many thing which I have done only because of Linit.           
+                  I can proudly say that I work for an organisation that encourages you to be innovative, gives you the freedom to do things the way you want to do.              
+                  One of the good things about Linit is its open and free culture. The Management is approachable and receptive of new ideas. You have an opportunity to grow by your own efforts.  
+                  Every contribution & effort will be solemnly recognized by the Management and you become one of the prominent members in the history books.
+                  Furthermore, the atmosphere prevailing at Linit is flexible enough and forgiving to every employee to get up from his mistakes and prove to him and others what his real abilities are..</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <i class="fa-solid fa-angle-left about_arrow newarrow1 fa-3x"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <i class="fa-solid fa-angle-right about_arrow newarrow fa-3x"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+        
+       <!-- Footer -->
+       <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-2 topfooter">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 footerrow">
+              <!-- Grid column -->
+              <div class="col-sm-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white" >AboutUs</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Quality</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 footer1">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section>
+            <div class="row d-flex justify-content-center footer_txt">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-2">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          All the © Copyrights are reserved by LINIT EXPORTS PVT. LTD.
+          <a class="text-white" href="https://mdbootstrap.com/"
+             ></a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js">
+  </script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  
+  
+</body>
+</html>
