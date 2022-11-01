@@ -1,32 +1,17 @@
 from urllib import request
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from dummyapp.models import Userdetails
 from dummyapp.forms import CustForm
 from django.urls import reverse
 from django.shortcuts import redirect
 from django.contrib import messages
 
-
-
 # Create your views here.
+
 def indexpage(request):
     
     return render(request,'linitv2/index.html')
 
-
-
-# def detailform(request):
-#     if request.method=='POST':  
-#         form = CustForm(request.POST)
-#         if form.is_valid:
-#             form.save()
-#             form = CustForm()
-#             return redirect('contactpage')
-           
-#     else:
-#         form = CustForm()
-        
-#     return render(request, 'linitv2/contact.html', {'form':form})
 
 def productionpage(request):
     return render(request, 'linitv2/production.html')
@@ -70,32 +55,20 @@ def life_at_linitpage(request):
 def careerspage(request):
     return render(request, 'linitv2/careers.html')
 
-
-
-# def contactpage(request):
-#     if request.method=='POST':  
-#         form = CustForm(request.POST)
-#         if form.is_valid:
-#             form.save()
-#             form = CustForm()
-#             return redirect('contactpage')
-
-        
-#     else:
-#         form = CustForm()
-#     return render(request, 'linitv2/contact.html',{'form':form})
-
 def contactpage(request):
     if request.method=='POST':  
         form = CustForm(request.POST)
-        if form.is_valid:
-            form.save()
-            form = CustForm()
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
             
             messages.success(request, 'Your form submitted successfully.')
-            return redirect('contactpage')    
+            return redirect('contactpage')   
+        else:
+            return render(request, 'linitv2/contact.html',{'form':form})   
+            
     else:
-        form = CustForm()
+        form = CustForm(None)
     
     return render(request, 'linitv2/contact.html',{'form':form})
 

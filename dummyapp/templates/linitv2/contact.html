@@ -109,20 +109,20 @@
         
           </div> 
          
-     
-          {% comment %} <div class="col-sm-6 contact_img" > {% endcomment %}
-            {% comment %} <img src="{% static 'images/hot_forging.jpg' %}" alt="" data-aos="fade-up" data-aos-duration="2000"  data-aos-anchor-placement="top-center"> {% endcomment %}
-            {% comment %} </div>  {% endcomment %}
+    
           <div class="col-sm-6 card" data-aos="zoom-in">
           
             <h3>Hey There,</h3>
             <p>Fill out this form and get a call from one of our sales executive to arrange a meeting.</p>
+                
                 <form action="" method="POST">
                 {% csrf_token %}
                 {{form.as_p}}
                 <p align="center"><button class="btn btn-primary" type="submit">Submit</button></p>
+
                 {% for message in messages %}
-                <p class="successmessage">{{message}}</p>
+                <strong><p class="successmessage">{{message}}</p></strong>
+                
                 {% endfor %}
               </form>   
 

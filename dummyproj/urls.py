@@ -40,9 +40,4 @@ urlpatterns = [
     path('life_at_linitpage', views.life_at_linitpage, name='life_at_linitpage'), 
     path('careerspage', views.careerspage, name='careerspage'), 
 
-
-
-
-
-    # path('linitindex',views.linitindex, name='linitindex'),
 ]
